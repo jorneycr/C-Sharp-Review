@@ -26,8 +26,25 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the secound number");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine("Enter the third number");
+int num3 = Convert.ToInt32(Console.ReadLine());
+
 Addition(num1, num2);
 
 // Value returning functions - completes a task, returns a result
 
+int LargestNumber(int num1, int num2, int num3)
+{
+    int largest = num1;
 
+    if (largest < num2)
+        largest = num2;
+
+    if (largest < num3)
+        largest = num3;
+
+    return largest;
+}
+
+int result = LargestNumber(num1, num2, num3);
+Console.WriteLine(result);
