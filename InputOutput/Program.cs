@@ -1,20 +1,20 @@
-﻿// Declare variable
+﻿// See https://aka.ms/new-console-template for more information
 
+
+// Declare Variable - a storage space in memory for the time an application is running 
 /*
-Data Types
-String
-Int - Double Float - Decimal
-Char
-*/
+    Data types
+    string - Words/numbers (Name, license plate number) - "Trevoir", "Hello World"
+    int - whole numbers | double/float - decimals
+    char - One Character ('A', '7', '%')
+ */
 
 string fullName; //camelCase
-int num = 28;
 
-// Allow user inout and store in variable
-Console.WriteLine("Enter your Full Name");
+// Allow user input and store in variable
+Console.WriteLine("Enter Your Full Name: ");
 fullName = Console.ReadLine();
 
-// Print contents of variable/user's input
-Console.Write("Your Full name is :");
-Console.WriteLine(" "+fullName);
-
+//Print contents of variable/user's input
+Console.Write("Your Full Name Is: ");
+Console.WriteLine(fullName);
